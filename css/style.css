@@ -6,8 +6,19 @@
 body{
     background-color: rgb(58, 100, 238);
 }
+
+#input{
+    text-align: center;
+    color:#fff;
+    font-size: 2rem;
+}
+
+#input *{
+    margin: 10px;
+}
+
 #container{
-    max-width: 1170px;
+    max-width: 1176px;
     width: 90%;
     margin: auto;
     padding: 3rem;

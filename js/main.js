@@ -1,11 +1,11 @@
 const containerDom = document.getElementById('container');
 
 const start = document.getElementById('start');
-start.addEventListener('click', 
+start.addEventListener('click',  
     function(){
-
+        
         const x = document.getElementById('counter').value;
-
+        
         for( let i = 1; i <= x ; i++ ) {
     
         //bisogna far processare prima i sottomultipli più alti per fare in modo che li stampi, 
@@ -48,7 +48,13 @@ start.addEventListener('click',
                 containerDom.append(numberSquare);
                 console.log(i);
             }
-        
-        }   
-    }
+        }
+    }  
 );
+
+// const cancel = document.getElementById('cancel');
+// start.addEventListener('click',  
+//     function(){
+//         containerDom.removeChild(numberSquare);
+//     }
+// );
