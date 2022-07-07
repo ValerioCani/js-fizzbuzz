@@ -1,9 +1,16 @@
 const containerDom = document.getElementById('container');
 
+// const cancel = document.getElementById('cancel');
+// cancel.addEventListener('click',  
+//     function(){
+//     }
+// );
+
 const start = document.getElementById('start');
 start.addEventListener('click',  
     function(){
-        
+
+        containerDom.innerHTML="";//consiglio di simone, in questo caso non serve il button cancel
         const x = document.getElementById('counter').value;
         
         for( let i = 1; i <= x ; i++ ) {
@@ -52,9 +59,11 @@ start.addEventListener('click',
     }  
 );
 
+
 // const cancel = document.getElementById('cancel');
-// start.addEventListener('click',  
+// start.addEventListener('click',  (questo non funziona perchè ho messo start di cancel)
 //     function(){
 //         containerDom.removeChild(numberSquare);
 //     }
 // );
+
